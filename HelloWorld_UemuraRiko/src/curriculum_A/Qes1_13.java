@@ -4,133 +4,220 @@ public class Qes1_13 {
 
 	public static void main(String[] args) {
 		
-		// Ques1
 		
-		// バイト型変数の宣言
-		byte byt;
-		// 短整数型変数の宣言
-		short s;
-		// 整数型変数の宣言
-		int i;
-		// 長整数変数の宣言
-		long l;
-		// 単精度浮動小数型変数の宣言
-		float f;
-		// 倍精度浮動小数型変数の宣言
-		double w;
-		// 文字型変数の宣言
-		char chr;
-		// 文字列型変数の宣言
-		String str;
-		// ブーリアン型変数の宣言
-		boolean b;
+		// Q1
 		
-		// Ques2
+		// 変数byteNumの初期値を設定
+		byte byteNum = 0;
+		// 変数shortNumの初期値を設定
+		short shortNum = 0;
+		// 変数intNumの初期値を設定
+		int intNum = 0;
+		// 変数longNumの初期値を設定
+		long longNum = 0L;
+		// 変数floatNumの初期値を設定
+		float floatNum = 0.0f;
+		// 変数doubleNum初期値を設定
+		double doubleNum = 0.0;
+		// 変数letterの初期値を設定
+		char letter = '\u0000';
+		// 変数lettersの初期値を設定
+		String letters = null;
+		// 変数isBooleanの初期値を設定
+		boolean isBoolean = false;
 		
-		// バイト型変数に初期値を代入
-		byt = 0;
-		// 短整数型変数に初期値を代入
-		s = 0;
-		// 整数型変数に初期値を代入
-		i = 0;
-		// 長整数型変数に初期値を代入
-		l = 0L;
-		//　単整度浮動小数型変数に初期値を代入
-		f = 0.0f;
-		//　倍精度浮動小数型変数に初期値を代入
-		w = 0.0d;
-		// 文字型変数に初期値を代入
-		chr = '\u0000';
-		// 文字列型変数に初期値を代入
-		str = null;
-		// ブーリアン型変数に初期値を代入
-		b = false;
 		
-		// Ques3
 		
-		// バイト型変数に値を代入
-		byt = 10;
-		// 短整数型変数に値を代入
-		s = 100;
-		// 整数型変数に値を代入
-		i = 1000;
-		// 長整数型変数に値を代入
-		l = 10000L;
-		// 単精度浮動小数型変数に値を代入
-		f = 9.5f;
-		// 倍精度浮動小数型変数に値を代入
-		w = 10.5d;
-		// 文字型変数に値を代入
-		chr = 'a';
-		// 文字列型変数に値を代入
-		str = "ハロー";
-		// ブーリアン型変数に値を代入
-		b = true;
+		// Q2
 		
-		// Ques4 	コンソール出力されるようにする
+		// 変数byteNumに10を代入
+		byteNum = 10;
+		// 変数shortNumに100を代入
+		shortNum = 100;
+		// 変数intNumに1000を代入
+		intNum = 1000;
+		// longNum変数に10000を代入
+		longNum = 10000L;
+		//　変数floatNumに9.5fを代入
+		floatNum = 9.5f;
+		//　変数doubleNumに10.5を代入
+		doubleNum = 10.5;
+		// 変数letterに'a'を代入
+		letter = 'a';
+		// 変数lettersに"ハロー"を代入
+		letters = "ハロー";
+		// 変数isBooleanにtrueを代入
+		isBoolean = true;
 		
-		System.out.println(byt + s + i + l);
 		
-		System.out.println(byt + byt);
 		
-		System.out.println(chr + " " + str + " " + b);
+		// Q3 	コンソール出力されるようにする
 		
-		System.out.println(byt + s + i + l + f + w);
+		// 11110を出力
+		System.out.println(byteNum + shortNum + intNum + longNum);
 		
-		System.out.println(byt * s * i * l );
+		// 20を出力
 		
-		System.out.println(w / s);
+		System.out.println(byteNum + byteNum);
 		
-		System.out.println(byt - s);
+		// a ハロー trueを出力
 		
-		// Ques5　正しく動作されるように修正する
+		System.out.println(letter + " " + letters + " " + isBoolean);
 		
-		int num = 20;
-		int num1 = 23;
-		System.out.println("ハローJAVA" + (num + num1));
+		// 数字を全て足して出力
 		
-		// Ques6　『山田太郎 18歳 170.5cm 62.2kg 寿司』の情報を変数にし、formatの通りに出力する
+		System.out.println(byteNum + shortNum + intNum + longNum + floatNum + doubleNum);
+		
+		// 小数点以外の数字を全てかけて出力
+		
+		System.out.println(byteNum * shortNum * intNum * longNum );
+		
+		// 10.5割る100をして出力
+		
+		System.out.println(doubleNum / shortNum);
+		
+		// 10引く100をして出力
+		
+		System.out.println(byteNum - shortNum);
+		
+		
+		
+		// Q4 
+		
+		//nameというString型の変数を宣言し、"山田太郎”という値を代入
 		
 		String name = "山田太郎";
-		int age = 18;
-		double height = 170.5;
-		double weight = 62.2;
-		String food = "寿司";
 		
-		System.out.println("初めまして" + name + "です");
-		System.out.println("年齢は" + age + "です");
-		System.out.println("身長は" + height + "です");
-		System.out.println("体重は" + weight + "です");
-		System.out.println("好きな食べ物は" + food + "です");
+		// コンソールに こんにちは、山田太郎さん！と出力
 		
-		// Ques7 6で作成した自己紹介に続いてBMIが表示されるようにする
+		System.out.println("こんにちは、" + name + "さん！");
 		
-		System.out.println("BMIは" + weight / ((height / 100) * (height / 100)) + "です");
 		
-		// Ques8 6で宣言した変数に再代入し下記の通りコンソールに出力する
 		
-		String name1 = "鈴木一郎";
-		int age1 = 24;
-		double height1 = 168.5;
-		double weight1 = 64.2;
-		String food1 = "オムライス";
-		double BMI = 22.6;
+		// Q5
 		
-		System.out.println("初めまして" + name1 + "です");
-		System.out.println("年齢は" + age1 + "です");
-		System.out.println("身長は" + height1 + "です");
-		System.out.println("体重は" + weight1 + "です");
-		System.out.println("好きな食べ物は" + food1 + "です");
-		System.out.println("BMIは" + BMI + "です");
+		//ageというint型の変数を宣言し、その変数に25を代入。
 		
-		// Ques9 8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力する
+		int age = 25;
 		
-		System.out.println("初めまして" + name1 + "です");
-		System.out.println("年齢は" + (age1 + 24) + "です");
-		System.out.println("身長は" + (height1 + 168.5) + "です");
-		System.out.println("体重は" + (weight1 + 64.2) + "です");
-		System.out.println("好きな食べ物は" + food1 + "です");
-		System.out.println("BMIは" + weight1 / (height1 / 100) * (height1 / 100) + "です");
+		// その変数を使用してコンソールに 年齢:25歳と出力
+		
+		System.out.println("年齢:" + age + "歳");
+		
+		
+		
+		// Q6 
+		
+		//num1というint型の変数を宣言し、10を代入
+		
+		int num1 = 10;
+		
+		// num2というint型の変数を宣言し、5を代入
+		
+		int num2 = 5;
+		
+		// num1とnum2を足した結果をsumという変数に代入し、コンソールに出力
+		
+		int sum = num1 + num2;
+		
+		System.out.println(sum);
+		
+		
+		
+		// Q7 
+		
+		// scoreというint型の変数を宣言し、80を代入
+		
+		int score = 80;
+		
+		// scoreに20を加えて、更新
+		
+		score += 20;
+		
+		// 最終スコア:100をscoreを使用してコンソールに出力
+		
+		System.out.println(score);
+		
+		
+		
+		// Q8
+		
+		// priceというdouble型の変数を宣言し、99.99を代入
+		
+		double price = 99.99;
+		
+		// priceをint型に変換
+		
+		int intPrice = (int) price ; // 強制型変換
+		System.out.println("整数価格:" + intPrice);  // 出力：99
+		
+		
+		
+		// Q9
+		
+		// String型の変数 numStrに"123"を代入
+		
+		String numStr = "123";
+		
+		// numStrをint型に変換
+		
+		int num = Integer.parseInt(numStr);
+		System.out.println(num + 10);  // 出力：133
+		
+		
+		
+		// Q10
+		
+		// int型の変数numに50を代入
+		
+		int num3 =50;
+		
+		// numをString型に変換し、"得点:50"の形で表示
+		
+		String str = String.valueOf(num3);
+		System.out.println("得点:" + str + "点");
+		
+		
+		
+		// Q11
+		
+		// int型の変数aに10を代入
+		
+		int a = 10;
+		
+		// int型の変数bに20を代入
+		
+		int b = 20;
+		
+		// aがbより小さいかどうかをboolean変数resultに代入
+		
+		boolean result = a < b;
+		
+		System.out.println(result);
+		
+		
+		
+		
+		// Q12
+		
+		// int型の変数xに15を代入
+		
+		int x = 15;
+		
+		// xが10以上なら"OK"、そうでなければ"NG"を表示
+		
+		System.out.println(x >= 10 ? "OK" : "NG");
+		
+		
+		
+		// Q13
+		
+		String text = "私はJavaが好きです。Javaは楽しい!";
+		System.out.println(text.replace("Java", "Python"));
+		
+	
+		
+		
 		
 		
 		// Ques10 8で使用した年齢が	25歳以上ならtrueが出力されるようにする
@@ -138,6 +225,8 @@ public class Qes1_13 {
 		System.out.println(age1 >= 25);
 		
 		// Ques11 8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力する
+		
+		
 	
 	}
 
