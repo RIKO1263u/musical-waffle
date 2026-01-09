@@ -222,7 +222,7 @@ public class Qes1_13 {
 		
 		// Ques10 8で使用した年齢が	25歳以上ならtrueが出力されるようにする
 		
-		System.out.println(age1 >= 25);
+		System.out.println(age >= 25);
 		
 		// Ques11 8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力する
 		
