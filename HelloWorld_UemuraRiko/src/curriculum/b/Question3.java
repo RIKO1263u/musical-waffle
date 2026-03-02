@@ -1,4 +1,5 @@
 package curriculum.b;
+
 import java.util.Scanner;
 
 public class Question3 {
@@ -9,10 +10,8 @@ public class Question3 {
 			System.out.println(i);
 		}
 		// Q2 for 文を使って 2 から 20 までの 偶数 を 1 つずつ表示
-		for (int i = 2; i <= 20; i++) {
-			if (i % 2 == 0) {
-				System.out.println(i);
-			}
+		for (int i = 2; i <= 20; i += 2) {
+			System.out.println(i);
 		}
 
 		// Q3 for 文を使って 10 から 1 まで カウントダウンして表示
@@ -84,12 +83,14 @@ public class Question3 {
 			}
 
 		}
+		sc.close();
 		//
-		for ( i = 1; i <= 9; i++) {
-			
+		for (i = 1; i <= 9; i++) {
+
 			for (int j = 1; j <= 9; j++) {
-				System.out.print(String.format("%02d" ,i) + " * " + String.format("%02d" ,j) + " = " + String.format("%02d" ,i * j) + " || ");
-				}
+				System.out.print(String.format("%02d", i) + " * " + String.format("%02d", j) + " = "
+						+ String.format("%02d", i * j) + " || ");
+			}
 			System.out.println();
 		}
 	}
